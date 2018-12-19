@@ -1,0 +1,31 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "assets/icons/icon-19.png",
+         "38": "assets/icons/icon-38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "掘金加强"
+   },
+   "chrome_url_overrides": {
+      "newtab": "main.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "基于掘金的自定义导航",
+   "icons": {
+      "128": "assets/icons/icon-128.png",
+      "16": "assets/icons/icon-16.png",
+      "48": "assets/icons/icon-48.png"
+   },
+   "manifest_version": 2,
+   "name": "掘金加强",
+   "offline_enabled": true,
+   "permissions": [ "tabs", "storage", "http://*/", "https://*/" ],
+   "short_name": "掘金加强",
+   "version": "0.3.8.1",
+   "web_accessible_resources": [ "*" ]
+}
